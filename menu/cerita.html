@@ -25,27 +25,33 @@
     
     <title>Dialio</title>   
   </head>
-  <body> 
-    <nav class="navbar fixed-top navbar-dark navbar-expand-lg">
-      <div class="container-fluid">
+  <body id="app"> 
+    <div class="container ">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark justify-content-end">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav mx-auto text-right">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html">Rumah</a>
+              <p>
+              <a href="../index.html">Rumah</a></p>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./tentang.html">Tentang</a>
+              <p>
+              <a href="./tentang.html">Tentang</a></p>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./cerita.html">Sedikit Cerita</a>
+              <p >
+              <a href="./cerita.html">Kontak</a></p>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
     
 
-        <div style="margin-top: 60px; background-color: rgb(3, 3, 3);" class="container bawah">
+        <div style="margin: 80px; padding: 10px 100px; background-color: rgb(29, 29, 29);" class="container-fluid">
           
             <div class="title">
                 <h3>Kontak</h3>
@@ -107,9 +113,6 @@
     
 
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -125,5 +128,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

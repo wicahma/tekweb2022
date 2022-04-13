@@ -25,30 +25,36 @@
     
     <title>Dialio</title>   
   </head>
-  <body> 
-    <nav class="navbar fixed-top navbar-dark navbar-expand-lg">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Rumah</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./menu/tentang.html">Tentang</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./menu/cerita.html">Sedikit Cerita</a>
-            </li>
-          </ul>
-        </div>
+  <body id="app"> 
+    <div class="container">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark justify-content-end">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto text-right">
+          <li class="nav-item">
+            <p>
+            <a href="./index.html">Rumah</a></p>
+          </li>
+          <li class="nav-item">
+            <p>
+            <a href="./menu/tentang.html">Tentang</a></p>
+          </li>
+          <li class="nav-item">
+            <p >
+            <a href="./menu/cerita.html">Kontak</a></p>
+          </li>
+        </ul>
       </div>
     </nav>
+  </div>
+  
     
 
-    <div class="cover" style="background-image: url(./asset/bg.jpg);">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-          <div class="col-8 text-white">
+      <div style="margin: 80px;" class="container-fluid">
+        <div class="row h-100 align-items-top">
+          <div class="col-7 text-white awalan">
             <h1 class="nama">Teguh Dwi Cahya Kusuma</h1>
             <p class="jobdesk">Seorang Mahasiswa 
               <span><a target="_blank" href="https://id.wikipedia.org/wiki/Mahasiswa">Sistem Informasi</a></span>  di Universitas Ahmad Dahlan
@@ -61,20 +67,14 @@
               <a href="https://twitter.com/wicahma"><i class="bi-twitter"></i></a>
             </div>
             </div>
-            <p class="src-bg"><a style="color: aliceblue;" href='https://www.freepik.com/vectors/classic-pattern'>Background from: macrovector - www.freepik.com</a>
-          </div></p>
-          <div class="col-4"><img id= profil src="./asset/profil.png" alt="Profil Teguh"></div>
+          </div>
+          <div class="col-xl-5">
+            <img id= profil src="./asset/profil.png" alt="Profil Teguh">
+          </div>
            
         </div> 
       </div>
-    </div>
     
-    <!--end header-->
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -90,5 +90,8 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./js/main.js"></script>
+
   </body>
 </html>
