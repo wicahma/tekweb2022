@@ -42,9 +42,9 @@
               <a href="./tentang.html">Tentang</a></p>
             </li>
             <li class="nav-item">
-              <p >
-              <a href="./artikel.html">Artikel</a></p>
-            </li>
+                <p >
+                <a href="./artikel.html">Artikel</a></p>
+              </li>
             <li class="nav-item">
               <p >
               <a href="./cerita.html">Kontak</a></p>
@@ -56,63 +56,19 @@
     
 
         <div style="margin-top: 80px; padding: 0 100px; " class="container-fluid">
-          <div style="padding: 10px 25px 0px; background-color: rgb(29, 29, 29, 0.500);" class="row">
-            <div class="title">
-                <h3>Kontak</h3>
-                <p>Kemari, berbagi cerita denganku</p>
-              </div>
-            <div class="row mt-2">
+          <div style="padding: 10px 25px 0px; background-color: rgba(29, 29, 29, 0.500);" class="row">
             
-            <div class="col-md-6 d-flex align-items-stretch">
-              <div class="info-box">
-                <i class="bx bx-map"></i>
-                <h4>Alamat</h4>
-                <p>Jl. Parangtritis No.200, Randubelang, Bangunharjo, Kec. Sewon, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55188</p>
-              </div>
+            <div v-for="item in article" class="col-sm">
+                <div  class="card" style="width: 30rem;">
+                    <img class="card-img-top" v-bind:src="item.thumbnail" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.title}}</h5>
+                      <p class="card-text">{{item.description}} </p>
+                      <a :href="'./read.html?article='+item.content" class="btn btn-primary" role="button">Baca</a>
+                    </div>
+                  </div>
             </div>
-    
-            <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-              <div class="info-box">
-                <i class="bx bx-share-alt"></i>
-                <h4>Social Profiles</h3>
-                <div class="social">
-                  <a  href="https://twitter.com/wicahma" class="twitter" target="_blank"><i class="bi-twitter"></i></a>
-                  <a  href="https://www.facebook.com/profile.php?id=100011516138101" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-                  <a  href="https://www.instagram.com/u.diama/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
-                  <a  href="https://github.com/wicahma" class="github" target="_blank"><i class="bi bi-github"></i></a>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col-md-6 mt-4 d-flex">
-              <div class="info-box">
-                <h4>Email aku</h4>
-                <p>teguh.dc.kusuma@gmail.com</p>
-              </div>
-            </div>
-            <div class="col-md-6 mt-4 d-flex align-items-stretch">
-              <div class="info-box">
-                <h4>Nomor Telepon</h4>
-                <p>+62 857 5108 0434</p>
-              </div>
-            </div>
-          </div>
-          <form action="" method="post" role="form" class="email-form">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required>
-              </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="Subjek" placeholder="Subject" required>
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="Pesan" rows="5" placeholder="Pesan" required></textarea>
-            </div>
-          </form>
+        
         </div>
         </div>
     
@@ -134,6 +90,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/vue@3"></script>
-    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
+    <script src="../js/get_json.js"></script>
   </body>
 </html>

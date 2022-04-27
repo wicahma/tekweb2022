@@ -1,0 +1,20 @@
+[
+    {
+        "num":"1",
+        "title":"Nikmatnya Bakwan Kawi di Yogyakarta",
+        "description": "Makan bakwan kawi enak di Yogyakarta",
+        "thumbnail": "https://cdn-2.tstatic.net/jateng/foto/bank/images/bakwan-kawi.jpg",
+        "author": "Teguh Dwi Cahya Kusuma",
+        "published_at": "Kamis, 28 April 2022",
+        "content": "article_1.md"
+    },
+    {
+        "num":"2",
+        "title":"Mendaki Prau Sejuta Makna",
+        "description": "Pengalaman mendaki Gunung Prau selama 2 hari 2 malam.",
+        "thumbnail": "https://cdn-2.tstatic.net/jateng/foto/bank/images/bakwan-kawi.jpg",
+        "author": "Teguh Dwi Cahya Kusuma",
+        "published_at": "Jum'at, 29 April 2022",
+        "content": "article_2.md"
+    }
+]
