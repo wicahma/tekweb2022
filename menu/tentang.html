@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -54,123 +52,78 @@
         <div style="background-color: rgb(29, 29, 29); 
         padding: 10px;" class="row">
             <div class="col">
-              <h3>Tentang</h3>
+              <h3>{{tentang.judul}} </h3>
               <p class="penjelasan">
-                Aku merupakan seorang Mahasiswa yang mengambil jurusan SI di Universitas Ahmad Dahlan. Ya, salah satu Universitas Islam yang ada di Jogjakota 
+                {{tentang.p1}} 
               </p>
               <div class="row">
                 <div class="col-md-6">
-                  <ul style="background-color:rgb(10, 10, 10); padding: 20px 20px;">
-                    <li><i class="bi-chevron-right"></i> <strong>Tanggal Lahir:</strong> <span>22 Oktober 2002</span></li>
-                    <li><i class="bi-chevron-right"></i> <strong>Telepon:</strong> <span>+62 857 5108 0434</span></li>
-                    <li><i class="bi-chevron-right"></i> <strong>Kota:</strong> <span>Yogyakarta, Indonesia</span></li>
+                  <ul style="background-color:rgb(15, 15, 15); padding: 20px 20px;">
+                    <li v-for="dt in tentang.dt_diri1"><i class="bi-chevron-right"></i> <strong>{{dt.judul}}:</strong> <span>{{dt.data}} </span></li>
                   </ul>
                 </div>
                 <div class="col-md-6">
-                  <ul style="background-color:rgb(10, 10, 10); padding: 20px 20px;">
-                    <li><i class="bi-chevron-right"></i> <strong>Umur:</strong> <span>19</span></li>
-                    <li><i class="bi-chevron-right"></i> <strong>Pendidikan:</strong> <span>Sarjana</span></li>
-                    <li><i class="bi-chevron-right"></i> <strong>Email:</strong> <span>teguh.dc.kusuma@gmail.com</span></li>
+                  <ul style="background-color:rgb(15, 15, 15); padding: 20px 20px;">
+                    <li v-for="dt in tentang.dt_diri2"><i class="bi-chevron-right"></i> <strong>{{dt.judul}}:</strong> <span>{{dt.data}}</span></li>
                   </ul>
                 </div>
               </div>
               <p>
-                Dalam berkuliah di Universitas Ahmad Dahlan, saya sudah mempelajari banyak hal. Dimulai dari mempelajari bahasa pemrograman Phyton, lalu dilanjutkan dengan belajar menggunakan aplikasi Statistik yaitu IBM Statistic. Selanjutnya, saya mempelajari bahasa pemrograman Html, CSS dan Javascript, dimana bahasa tersebut merupakan bahsa yang lumayan sulit unntuk dipelajari dimana waktu untuk mempelajarinya hanya 6 bulan dengan banyak bahasa pemrograman lainnya yang harus dipelajari, tetapi alhamdulillah saya bisa melewati masa sulit untuk  mempelajarinya  dan kini sudah memahami sebagian materi Html dan jugapemrograman yanng ada pada semester sebelumnya, Berikut adalah list materi dan juga bahasa yang sudah saya kuasali dan juga pelajari semasa kuliah 
+                {{tentang.p2}}
               </p>
             </div>
           </div>
 
 
           <div class="row">
-          
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">HTML</h5>
-                  <p class="card-text">Bahasa pemrograman yang biasanya sering digunakan untuk memmbuat sebuah website.</p>
-                  <a target="_blank" href="https://id.wikipedia.org/wiki/HTML" class="btn">Lebih lengkap</a>
-                </div>
-              </div>
-            </div> 
-            
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">CSS</h5>
-                  <p class="card-text">Bahasa pemrograman yang mendampingi Html, hanya saja ia berfungsi khusus untuk mempercantik tampilan Html.</p>
-                  <a target="_blank" href="https://id.wikipedia.org/wiki/Cascading_Style_Sheets" class="btn btn-primary">Lebih lengkap</a>
-                </div>
-              </div>
-            </div> 
-    
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Python</h5>
-                  <p class="card-text">Merupakan bahasa pemrograman yang memilki barisan kode program yang sangat simpel dan mudah untuk dipahami.</p>
-                  <a target="_blank" href="https://id.wikipedia.org/wiki/Python_(bahasa_pemrograman)" class="btn btn-primary">Lebih lengkap</a>
-                </div>
-              </div>
-            </div> 
 
-            <div class="col-md-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">GIS</h5>
-                    <p class="card-text">memungkinkan kita dapat memahami dan memvisualisasikan data geografi sehingga dapat mengetahui pola, hubungan dan tren dalam bentuk peta, tabel dan grafik serta laporan.</p>
-                    <a target="_blank" href="https://id.wikipedia.org/wiki/Sistem_informasi_geografis" class="btn btn-primary">Lebih lengkap</a>
-                  </div>
-                </div>
-              </div>
-          
-
-            <div class="col-md-4">
+            <div class="col-md-4" v-for="card in list.data">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Java</h5>
-                  <p class="card-text">Saya baru mempelajari java pada seemster 4 ini mengggunakan aplikasi Netbeans.</p>
-                  <a target="_blank" href="https://id.wikipedia.org/wiki/Java" class="btn btn-primary">Lebih lengkap</a>
-                </div>
-              </div>
-            </div> 
-
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Javascript</h5>
-                  <p class="card-text">Ia adalah bahasa selanjutnya untuk melengkapi bahasa pemrograman di Html. Dengan menggunakan ini, maka websiite akan menjadi lebih responsive.</p>
-                  <a target="_blank" href="https://id.wikipedia.org/wiki/JavaScript" class="btn btn-primary">Lebih lengkap</a>
-                </div>
-              </div>
-            </div> 
-
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Photoshop</h5>
-                  <p class="card-text">Photoshop adalah aplikasi pengedit gambar yang fiturnya saya rasa cukup melimpah sehhingga dapat digunakan dalam bidang yanng luas.</p>
-                  <a target="_blank" href="https://id.wikipedia.org/wiki/Adobe_Photoshop" class="btn btn-primary">Lebih lengkap</a>
-                </div>
-              </div>
-            </div> 
-
-            <div class="col-md-4">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Illustrator</h5>
-                  <p class="card-text">Berbeda dengan illustrator, ia lebih dikhususkan untuk membuat sebuah illustrasi atau vector, dikarenakan fiturnya  yang sudah  dikhsusukan untuk menggab=mbar illustrasi.</p>
-                  <a target="_blank" href="https://id.wikipedia.org/wiki/Adobe_Illustrator" class="btn btn-primary">Lebih lengkap</a>
+                  <h5 class="card-title">{{card.judul}}</h5>
+                  <p class="card-text">{{card.teks}}</p>
+                  <a target="_blank" v-bind:href="card.url" class="btn btn-primary">Lebih lengkap</a>
                 </div>
               </div>
             </div> 
 
         </div>
+
+        <div style="background-color: rgb(29, 29, 29); 
+        padding: 10px; margin-top: 30px;" class="row">
+            <div class="col-md">
+              <h3>Tabel Ketrampilan</h3>
+
+              <table class="tabel">
+                <tr class="t_judul"> 
+                  <td width="35px">NO.</td>
+                  <td v-for="judul in tabel.jtabel">{{judul}}</td>
+                </tr>
+                <tr v-for="(data,index) in tabel.data">
+                  <td>{{index+1}}</td>
+                  <td>{{data.nama_app}}</td>
+                  <td>{{data.tingkat_skill}}</td>
+                </tr>
+              </table>
+          </div>
+      </div>
+
+        <div style="background-color: rgb(29, 29, 29); 
+        padding: 10px; margin-top: 30px;" class="row">
+              
+               <h3 style="width:100%; padding: 0 10px;">Portfolio</h3>
+              <div class="col-md-4" v-for="card in list.data">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">{{card.judul}}</h5>
+                    <p class="card-text">{{card.teks}}</p>
+                    <a target="_blank" v-bind:href="card.url" class="btn btn-primary">Lebih lengkap</a>
+                  </div>
+                </div>
+              </div>
+            </div>
       </div>
   
-
-    
-
-
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -187,6 +140,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/vue@3"></script>
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

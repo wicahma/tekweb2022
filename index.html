@@ -55,16 +55,16 @@
       <div style="margin-top: 80px; " class="container-fluid">
         <div class="row h-100 align-items-top">
           <div class="col-7 text-white awalan">
-            <h1 class="nama">Teguh Dwi Cahya Kusuma</h1>
-            <p class="jobdesk">Seorang Mahasiswa 
-              <span><a target="_blank" href="https://id.wikipedia.org/wiki/Mahasiswa">Sistem Informasi</a></span>  di Universitas Ahmad Dahlan
-              <span><a target="_blank" href="https://www.jogjakota.go.id/">Yogyakarta</a></span>.</p>
+            <h1 class="nama">{{header.nama}}</h1>
+            <p class="jobdesk">{{header.des.a}} 
+              <span><a target="_blank" v-bind:href="header.des.jrs.url">{{header.des.jrs.title}}</a></span> {{header.des.b}}
+              <span><a target="_blank" v-bind:href="header.des.kta.url">{{header.des.kta.title}} </a></span>.</p>
             <div class="social-cover">
               <div class="social">
-              <a href="https://www.instagram.com/u.diama/"><i class="bi-instagram"></i></a>
-              <a href="https://github.com/wicahma"><i class="bi-github"></i></a>
-              <a href="https://www.facebook.com/people/Teguh-Dwi-Cahya-Kusuma/100011516138101/"><i class="bi-facebook"></i></a>
-              <a href="https://twitter.com/wicahma"><i class="bi-twitter"></i></a>
+              <a v-bind:href="sosial.ig.url"><i class="bi-instagram"></i></a>
+              <a v-bind:href="sosial.git.url"><i class="bi-github"></i></a>
+              <a v-bind:href="sosial.fb.url"><i class="bi-facebook"></i></a>
+              <a v-bind:href="sosial.tw.url"><i class="bi-twitter"></i></a>
             </div>
             </div>
           </div>
