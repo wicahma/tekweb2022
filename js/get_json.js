@@ -10,7 +10,7 @@ Vue.createApp({
       {
         axios
           .get(
-            src="../contents/articles.json"
+            "https://raw.githubusercontent.com/wicahma/tekweb2022/master_4/contents/articles.json"
             )
           .then((res) => {
             console.log(res.data); //melihat respon data pada console browser
