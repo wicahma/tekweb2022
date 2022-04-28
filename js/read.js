@@ -9,12 +9,12 @@ Vue.createApp({
       {
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
-        const article = urlParams.get('article');        
+        const artikel = urlParams.get('article');        
         var converter = new showdown.Converter();
-        console.log(article);
+        console.log(artikel);
         axios
           .get(
-            src="../contents/"+article
+            src="https://raw.githubusercontent.com/wicahma/tekweb2022/master_4/contents/"+artikel
           )
           .then((res) => {
             var html = converter.makeHtml(res.data);           
