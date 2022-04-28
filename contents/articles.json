@@ -11,7 +11,7 @@
         "num":"2",
         "title":"Mendaki Prau Sejuta Makna",
         "description": "Pengalaman mendaki Gunung Prau selama 2 hari 2 malam.",
-        "thumbnail": "https://github.com/wicahma/tekweb2022/blob/master_4/asset/mucak_prau.jpeg?raw=true",
+        "thumbnail": "https://raw.githubusercontent.com/wicahma/tekweb2022/master_4/asset/mucak_prau.jpeg",
         "author": "Teguh Dwi Cahya Kusuma",
         "content": "article_2.md"
     },
