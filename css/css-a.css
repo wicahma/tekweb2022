@@ -68,7 +68,7 @@ li {
 }
 
 
-.col-xl-5 #profil {
+.col-sm-5 #profil {
   width: 80%;
   margin: 30px 0 0 0;
 }
@@ -143,8 +143,8 @@ li {
 }
 
 .card-img-top {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .info-box {
@@ -176,6 +176,7 @@ li {
   margin: 50px 0 50px;
   background-color: rgb(14, 14, 14);
   padding: 20px;
+  width: 100%;
 }
 
 .form-control {
@@ -185,7 +186,7 @@ li {
 }
 
 .title{
-  padding-top: 10px;
+  padding: 0px 10px;
 }
 
 .email-form{

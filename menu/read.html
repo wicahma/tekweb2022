@@ -17,13 +17,68 @@
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/css-a.css">
-    <title>Baca Article</title>   
+
+    <!-- Font Gugel Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+
+    <title>Diama - Baca Article</title>   
+
+    <style>
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      a {
+        color:white;
+      }
+
+      a:hover {
+        color:rgb(194, 142, 0);
+      }
+
+    </style>
   </head>
   <body>
 <div id="app">
-  <div class="container">
-    <div v-html="article"></div>
-  </div>    
+
+    <div class="container ">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark justify-content-end">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto text-right">
+              <li class="nav-item">
+                <p>
+                <a href="../index.html">Rumah</a></p>
+              </li>
+              <li class="nav-item">
+                <p>
+                <a href="./tentang.html">Tentang</a></p>
+              </li>
+              <li class="nav-item">
+                  <p >
+                  <a href="./artikel.html">Artikel</a></p>
+                </li>
+              <li class="nav-item">
+                <p >
+                <a href="./cerita.html">Kontak</a></p>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+  <div style="margin-top:5em; background-color: rgba(29, 29, 29, 0.500);" class="container">
+    <div style="padding: 1em;" v-html="article"></div>
+  </div>   
+
 </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
