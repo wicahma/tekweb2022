@@ -88,10 +88,10 @@ li {
   padding: 0 13px 0;
 }
 
-.nav-item p{
+/* buat garis kuning */
+.nav-item  p{
   margin: 2px;
 }
-
 
 
 .nav-item p a{
@@ -107,7 +107,7 @@ li {
   text-decoration: none;
 }
 
- .nav-item a::after{
+ .hom a::after{
   content: '';
   position: absolute;
   bottom: 0;
@@ -119,16 +119,17 @@ li {
   transition: opacity 200ms, transform 200ms;
 }
 
-.nav-item a:hover::after,
-.nav-item a:focus::after {
+.hom a:hover::after,
+.hom a:focus::after {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
 
-.nav-item a::after {
-  opacity 1;
+.hom a::after {
   transform: translate3d(-100%, 0, 0);
 }
+
+/* akhir garis kuning */
 
 .row  {
   margin-top: 0px;
@@ -218,4 +219,28 @@ li {
   font-weight: bold;
   font-size: 16px;
   padding: 13px 10px;
+}
+
+.tmb p {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.tmb a{
+  color: rgb(187, 187, 187);
+  text-decoration: none;
+  padding: 0.05em 0.5em;
+  border: solid 1px;
+}
+
+.tmb a:hover {
+  animation: warna 500ms forwards;
+}
+
+@-webkit-keyframes warna {
+  100% {
+    color: #0b0b0b;
+    background-color: rgb(235, 173, 2);
+    border-color: rgb(235, 173, 2);
+  }
 }
