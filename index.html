@@ -1,112 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/css-a.css">
-    <!-- Font Gugel Font -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
-    
-    <title>Dialio</title>   
-  </head>
-  <body id="app"> 
-    <div class="container">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/css-a.css">
+  <!-- Font Gugel Font -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+
+  <title>Dialio</title>
+</head>
+
+<body id="app">
+  <div class="container">
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark justify-content-end">
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto text-right">
           <li class="nav-item hom">
             <p>
-            <a href="./index.html">Rumah</a></p>
+              <a href="./index.html">Rumah</a>
+            </p>
+            <div class="len"></div>
           </li>
           <li class="nav-item hom">
             <p>
-            <a href="./menu/tentang.html">Tentang</a></p>
+              <a href="./menu/tentang.html">Tentang</a>
+            </p>
           </li>
           <li class="nav-item hom">
-            <p >
-            <a href="./menu/artikel.html">Artikel</a></p>
+            <p>
+              <a href="./menu/artikel.html">Artikel</a>
+            </p>
           </li>
           <li class="nav-item hom">
-            <p >
-            <a href="./menu/cerita.html">Kontak</a></p>
-          </li>
+            <p>
+              <a href="./menu/cerita.html">Kontak</a>
+            </p>
           </li>
           <li class="nav-item">
-              <p>
-                <div class="tmb">
-                  <a  href="./buku-alamat-tekweb/index.html">App Buku Alamat</a>
-                </div>
+            <p>
+            <div class="tmb">
+              <a href="./buku-alamat-tekweb/index.html">App Buku Alamat</a>
+            </div>
             </p>
-            
+
           </li>
         </ul>
       </div>
     </nav>
   </div>
-  
-    
 
-      <div style="margin-top: 80px; " class="container-fluid">
-        <div style="padding: 10px 1% 25px; margin: 0 1%;" class="row h-100 align-items-top">
-          <div class="col-sm-7 text-white ">
-            <h1 class="nama">{{header.nama}}</h1>
-            <p class="jobdesk">{{header.des.a}} 
-              <span><a target="_blank" v-bind:href="header.des.jrs.url">{{header.des.jrs.title}}</a></span> {{header.des.b}}
-              <span><a target="_blank" v-bind:href="header.des.kta.url">{{header.des.kta.title}} </a></span>.</p>
-            <div class="social-cover">
-              <div class="social">
-              <a v-bind:href="sosial.ig.url"><i class="bi-instagram"></i></a>
-              <a v-bind:href="sosial.git.url"><i class="bi-github"></i></a>
-              <a v-bind:href="sosial.fb.url"><i class="bi-facebook"></i></a>
-              <a v-bind:href="sosial.tw.url"><i class="bi-twitter"></i></a>
-            </div>
-            </div>
+
+
+  <div style="margin-top: 80px; " class="container-fluid">
+    <div style="padding: 10px 1% 25px; margin: 0 1%;" class="row h-100 align-items-top">
+      <div class="col-sm-7 text-white ">
+        <h1 class="nama">{{header.nama}}</h1>
+        <p class="jobdesk">{{header.des.a}}
+          <span><a target="_blank" v-bind:href="header.des.jrs.url">{{header.des.jrs.title}}</a></span> {{header.des.b}}
+          <span><a target="_blank" v-bind:href="header.des.kta.url">{{header.des.kta.title}} </a></span>.
+        </p>
+        <div class="social-cover">
+          <div class="social">
+            <a v-bind:href="sosial.ig.url"><i class="bi-instagram"></i></a>
+            <a v-bind:href="sosial.git.url"><i class="bi-github"></i></a>
+            <a v-bind:href="sosial.fb.url"><i class="bi-facebook"></i></a>
+            <a v-bind:href="sosial.tw.url"><i class="bi-twitter"></i></a>
           </div>
-          <div class="col-sm-5">
-            <img id= profil src="./asset/profil.png" alt="Profil Teguh">
-          </div>
-           
-        </div> 
+        </div>
       </div>
-    
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Tautan Vue.js -->
-    <script src="https://unpkg.com/vue@3"></script>
-    <script src="./js/main.js"></script>
+      <div class="col-sm-5">
+        <img id=profil src="./asset/profil.png" alt="Profil Teguh">
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- Tautan Vue.js -->
+  <script src="https://unpkg.com/vue@3"></script>
+  <script src="./js/main.js"></script>
 
 
-  </body>
+</body>
+
 </html>
