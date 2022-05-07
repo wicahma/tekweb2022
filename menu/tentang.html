@@ -20,9 +20,9 @@
   <title>Dialio</title>
 </head>
 
-<body id="app">
+<body class="light" id="app">
   <div class="container">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark justify-content-end">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark justify-content-end">
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -51,12 +51,28 @@
             </p>
           </li>
         </ul>
+        <div class="toggleWrapper mt-1 mr-3">
+          <input type="checkbox" class="dn" id="dn"/>
+          <label for="dn" class="toggle">
+            <span class="toggle__handler">
+                <span class="crater crater--1"></span>
+                <span class="crater crater--2"></span>
+                <span class="crater crater--3"></span>
+              </span>
+              <span class="star star--1"></span>
+              <span class="star star--2"></span>
+              <span class="star star--3"></span>
+              <span class="star star--4"></span>
+              <span class="star star--5"></span>
+              <span class="star star--6"></span>
+          </label>
+        </div>
       </div>
     </nav>
   </div>
 
   <div style="margin-top: 80px; " class="container-fluid">
-    <div style="padding: 10px 1% 25px; margin: 0 1%; background-color: rgba(29, 29, 29, 0.500); 
+    <div style="padding: 10px 1% 25px; margin: 0 1%; background-color: var(--bg-container); 
         padding: 10px;" class="row">
       <div class="col">
         <h3>{{tentang.judul}} </h3>
@@ -65,13 +81,13 @@
         </p>
         <div class="row">
           <div class="col-md-6">
-            <ul style="background-color:rgb(15, 15, 15); padding: 20px 20px;">
+            <ul style="background-color: var(--warna-box-didalam-conntainer); padding: 20px 20px;">
               <li v-for="dt in tentang.dt_diri1"><i class="bi-chevron-right"></i> <strong>{{dt.judul}}:</strong>
                 <span>{{dt.data}} </span></li>
             </ul>
           </div>
           <div class="col-md-6">
-            <ul style="background-color:rgb(15, 15, 15); padding: 20px 20px;">
+            <ul style="background-color: var(--warna-box-didalam-conntainer); padding: 20px 20px;">
               <li v-for="dt in tentang.dt_diri2"><i class="bi-chevron-right"></i> <strong>{{dt.judul}}:</strong>
                 <span>{{dt.data}}</span></li>
             </ul>
@@ -91,14 +107,14 @@
           <div class="card-body">
             <h5 class="card-title">{{card.judul}}</h5>
             <p class="card-text">{{card.teks}}</p>
-            <a target="_blank" v-bind:href="card.url" class="btn btn-primary">Lebih lengkap</a>
+            <a target="_blank" v-bind:href="card.url" class="btn btn-warning">Lebih lengkap</a>
           </div>
         </div>
       </div>
 
     </div>
 
-    <div style="background-color: rgb(29, 29, 29, 0.500); 
+    <div style="background-color: var(--bg-container); 
         padding: 10px 1% 25px; margin: 0 1%;" class="row">
       <div class="col-md">
         <h3>Tabel Ketrampilan</h3>
@@ -117,7 +133,7 @@
       </div>
     </div>
 
-    <div style="background-color: rgb(29, 29, 29, 0.500); 
+    <div style="background-color: var(--bg-container) ; 
         padding: 10px 1% 25px; margin: 3% 1%;" class="row">
 
       <h3 style="width:100%; padding: 0 10px;">Portfolio</h3>
@@ -126,7 +142,7 @@
           <div class="card-body">
             <h5 class="card-title">{{card.judul}}</h5>
             <p class="card-text">{{card.teks}}</p>
-            <a target="_blank" v-bind:href="card.url" class="btn btn-primary">Lebih lengkap</a>
+            <a target="_blank" v-bind:href="card.url" class="btn btn-warning">Lebih lengkap</a>
           </div>
         </div>
       </div>

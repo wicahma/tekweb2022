@@ -153,4 +153,7 @@ Vue.createApp({
     },
   }).mount("#app");
 
+  document.querySelector('.dn').addEventListener('click',()=> {
+    document.body.classList.toggle('light')
+  })
   

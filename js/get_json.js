@@ -10,7 +10,7 @@ Vue.createApp({
       {
         axios
           .get(
-            "https://raw.githubusercontent.com/wicahma/tekweb2022/master_4/contents/articles.json"
+            src="../contents/articles.json"
             )
           .then((res) => {
             console.log(res.data); //melihat respon data pada console browser
@@ -25,3 +25,7 @@ Vue.createApp({
       this.getArticle() //eksekusi fungsi getArticles() pada bagian methods saat halaman terbuka
     },
   }).mount("#app");
+
+  document.querySelector('.dn').addEventListener('click',()=> {
+    document.body.classList.toggle('light')
+  })

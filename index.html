@@ -22,9 +22,10 @@
   <title>Dialio</title>
 </head>
 
-<body id="app">
+<body class="light" id="app">
   <div class="container">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark justify-content-end">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark justify-content-end">
+      
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -61,15 +62,33 @@
 
           </li>
         </ul>
+          <div class="toggleWrapper mt-1 mr-3">
+            <input type="checkbox" class="dn" id="dn"/>
+            <label for="dn" class="toggle">
+              <span class="toggle__handler">
+                  <span class="crater crater--1"></span>
+                  <span class="crater crater--2"></span>
+                  <span class="crater crater--3"></span>
+                </span>
+                <span class="star star--1"></span>
+                <span class="star star--2"></span>
+                <span class="star star--3"></span>
+                <span class="star star--4"></span>
+                <span class="star star--5"></span>
+                <span class="star star--6"></span>
+            </label>
+          </div>
+
       </div>
     </nav>
   </div>
 
+  
 
 
   <div style="margin-top: 80px; " class="container-fluid">
     <div style="padding: 10px 1% 25px; margin: 0 1%;" class="row h-100 align-items-top">
-      <div class="col-sm-7 text-white ">
+      <div class="col-sm-7 text-white">
         <h1 class="nama">{{header.nama}}</h1>
         <p class="jobdesk">{{header.des.a}}
           <span><a target="_blank" v-bind:href="header.des.jrs.url">{{header.des.jrs.title}}</a></span> {{header.des.b}}

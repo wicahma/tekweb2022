@@ -14,7 +14,7 @@ Vue.createApp({
         console.log(artikel);
         axios
           .get(
-            src="https://raw.githubusercontent.com/wicahma/tekweb2022/master_4/contents/"+artikel
+            src="../contents/"+artikel
           )
           .then((res) => {
             var html = converter.makeHtml(res.data);           
@@ -30,3 +30,7 @@ Vue.createApp({
       this.getMarkdownData();
     },
   }).mount("#app");
+
+  document.querySelector('.dn').addEventListener('click',()=> {
+    document.body.classList.toggle('light')
+  })
