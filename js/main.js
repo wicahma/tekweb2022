@@ -141,15 +141,50 @@ Vue.createApp({
           },
         },
         // Akhir page index
+        data_artikel: [],
+        article: null,
 
       };
     },
-    methods: { //tempat menambahkan fungsi-fungsi
-
+    methods: {
+      ambilArticle()
+      {
+        axios
+          .get(
+            "https://raw.githubusercontent.com/wicahma/tekweb2022/master/contents/articles.json"
+            )
+          .then((res) => {
+            console.log(res.data); //melihat respon data pada console browser
+            this.data_artikel = res.data; //memperbarui variabel article pada bagian data()
+          })
+          .catch((error) => {
+            console.log(error); //melihat error jika pengambilan data adalah gagal
+          });
+      },
+      ambilDataMarkdown()
+      {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const artikel = urlParams.get('article');        
+        var converter = new showdown.Converter();
+        console.log(artikel);
+        axios
+          .get(
+            src="https://raw.githubusercontent.com/wicahma/tekweb2022/master/contents/"+artikel
+          )
+          .then((res) => {
+            var html = converter.makeHtml(res.data);           
+            this.article = html;
+            console.log(html);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
     },
-    beforeMount() { //fungsi yang dipanggil oleh vue sebelum mount terjadi
- //contoh fungsi dalam methods yang dipanggil saat halaman terbuka
-      
+    beforeMount() { 
+      this.ambilArticle(),
+      this.ambilDataMarkdown()
     },
   }).mount("#app");
 

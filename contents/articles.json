@@ -1,39 +1,47 @@
 [
     {
-        "num":"1",
-        "title":"Nikmatnya Bakwan Kawi di Yogyakarta",
+        "num": "6",
+        "title": "Menganalisis Proses Bisnis yang ada di Sugara Milk",
+        "description": "berikut merupaka sebuah pembahasan proses bisnis yang ada pada Sugara Milk",
+        "thumbnail": "../asset/gambar 5.jpeg",
+        "author": "Teguh Dwi Cahya Kusuma",
+        "content": "article_6.md"
+    },
+    {
+        "num": "1",
+        "title": "Nikmatnya Bakwan Kawi di Yogyakarta",
         "description": "Makan bakwan kawi enak di Yogyakarta",
         "thumbnail": "https://cdn-2.tstatic.net/jateng/foto/bank/images/bakwan-kawi.jpg",
         "author": "Teguh Dwi Cahya Kusuma",
         "content": "article_1.md"
     },
     {
-        "num":"2",
-        "title":"Mendaki Prau Sejuta Makna",
+        "num": "2",
+        "title": "Mendaki Prau Sejuta Makna",
         "description": "Pengalaman mendaki Gunung Prau selama 2 hari 2 malam.",
         "thumbnail": "https://raw.githubusercontent.com/wicahma/tekweb2022/master_4/asset/mucak_prau.jpeg",
         "author": "Teguh Dwi Cahya Kusuma",
         "content": "article_2.md"
     },
     {
-        "num":"3",
-        "title":"Starlink",
+        "num": "3",
+        "title": "Starlink",
         "description": "Konstelasi Satelit Internet SpaceX, salah satu project gila Elon Musk yang sangat mencengangkan.",
         "thumbnail": "https://nesr.labs.telkomuniversity.ac.id/wp-content/uploads/sites/52/2021/05/z_p13-SpaceX-02-700x402.jpg",
         "author": "Diva Auliya Zulkarnaen",
         "content": "article_3.md"
     },
     {
-        "num":"4",
-        "title":"Manusia",
+        "num": "4",
+        "title": "Manusia",
         "description": "Makhluk rakus yang berada pada rantai tertinggi piramida kehidupan.",
         "thumbnail": "https://images.unsplash.com/photo-1617209597807-5528a9767db7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80",
         "author": "Teguh Dwi Cahya Kusuma",
         "content": "article_4.md"
     },
     {
-        "num":"5",
-        "title":"Contoh Teks MC Tahun Baru Islam",
+        "num": "5",
+        "title": "Contoh Teks MC Tahun Baru Islam",
         "description": "Sebuah contoh singkat tentang tampillan teks MC Pada Peringatan Tahun baru Islam ke-1442 H.",
         "thumbnail": "https://images.unsplash.com/photo-1573939705721-9fa2cdcda901?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80",
         "author": "Teguh Dwi Cahya Kusuma",

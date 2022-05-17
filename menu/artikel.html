@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="../css/css-a.css">
+  <link rel="stylesheet" href="../css/css-utama.css">
 
   <!-- Font Gugel Font -->
   <link
@@ -81,7 +81,7 @@
     <div style="padding: 10px 1% 25px; margin: 0 1%; background-color: var(--bg-container);" class="row">
       <h3 style="width:100%; padding: 0 10px;">Sedikit Kumpulan Artikel</h3>
 
-      <div v-for="item in article" class="col-md-3">
+      <div v-for="item in data_artikel" class="col-md-3">
         <div class="card text-left">
           <img class="card-img-top" v-bind:src="item.thumbnail" alt="Card image cap">
           <div class="card-body">
@@ -113,7 +113,7 @@
   <script src="https://unpkg.com/vue@3"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
-  <script src="../js/get_json.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>
