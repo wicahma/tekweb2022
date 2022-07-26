@@ -151,7 +151,7 @@ Vue.createApp({
       {
         axios
           .get(
-            "https://raw.githubusercontent.com/wicahma/tekweb2022/master/contents/articles.json"
+            "https://fireapi.diama.my.id/index.php/articles"
             )
           .then((res) => {
             console.log(res.data); //melihat respon data pada console browser
