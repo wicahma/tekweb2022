@@ -113,7 +113,6 @@ Vue.createApp({
        
         // Untuk page index
         header: {
-          nama: "Teguh Dwi Cahya Kusuma",
           des : {
             a: "Seorang Mahasiswa",
             b: "di Universitas Ahmad Dahlan",
@@ -126,20 +125,6 @@ Vue.createApp({
               url: "https://www.jogjakota.go.id/",
             },
             
-          },
-        },
-        sosial: {
-          ig: {
-            url: "https://www.instagram.com/u.diama/",
-          },
-          git: {
-            url: "https://github.com/wicahma",
-          },
-          fb: {
-            url: "https://www.facebook.com/people/Teguh-Dwi-Cahya-Kusuma/100011516138101/",
-          },
-          tw: {
-            url: "https://twitter.com/wicahma",
           },
         },
         // Akhir page index
@@ -155,7 +140,7 @@ Vue.createApp({
       {
         axios
           .get(
-            fireApi+"article"
+            fireApi+"articles"
             )
           .then((res) => {
             console.log(res.data); //melihat respon data pada console browser
@@ -202,7 +187,7 @@ Vue.createApp({
         console.log(artikel);
         axios
           .get(
-            src="https://raw.githubusercontent.com/wicahma/tekweb2022/master/contents/"+artikel
+            src="../contents/"+artikel
           )
           .then((res) => {
             var html = converter.makeHtml(res.data);           
