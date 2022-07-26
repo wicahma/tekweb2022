@@ -202,7 +202,7 @@ Vue.createApp({
         console.log(artikel);
         axios
           .get(
-            src="https://diama.my.id/contents/"+artikel
+            src="https://raw.githubusercontent.com/wicahma/tekweb2022/master/contents/"+artikel
           )
           .then((res) => {
             var html = converter.makeHtml(res.data);           
