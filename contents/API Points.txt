@@ -1,0 +1,304 @@
+# Design API Point dengan 3 tables
+
+### Artikel
+#### Menampilkan data semua artikel
+
+import string
+
+
+GET: /articles
+response:
+[
+    {
+        "id"            : "",
+        "title"         : "",
+        "description"   : "",
+        "thumbnail"     : "",
+        "author"        : "",
+        "content"       : ""
+    }
+]
+
+
+
+#### Menampilkan data artikel dengan memasukkan ID tertentu
+
+GET: /articles/[ID]
+response:
+{
+    "id"            : "",
+    "title"         : "",
+    "description"   : "",
+    "thumbnail"     : "",
+    "author"        : "",
+    "content"       : ""
+}
+
+
+
+#### Menambahkan data baru ke tabel artikel
+##### Tidak perlu menggunakan ID dikarenakan PK sudah Auto Increment
+
+POST: /article
+data:
+{
+    "title"         : "",
+    "description"   : "",
+    "thumbnail"     : "",
+    "author"        : "",
+    "content"       : ""
+}
+
+response:
+true    // if success
+false   // if failure
+
+
+
+#### Memperbarui artikel dengan menggunakan ID tertentu
+
+PUT: /article/[ID]
+data:
+{
+    "title"         : "",
+    "description"   : "",
+    "thumbnail"     : "",
+    "author"        : "",
+    "content"       : ""
+}
+
+response:
+true    // if success
+false   // if failure
+
+
+
+#### Menghapus artikel dengan menggunakan ID tertentu
+
+DELETE: /article/[id]
+response:
+true    // if success
+false   // if failure
+
+
+
+
+
+### Users
+#### Menampilkan data dari database Users
+
+GET: /users
+response:
+[
+    {
+        "id"        : "",
+        "name"      : "",
+        "motto"     : "",
+        "ig_url"    : "",
+        "fb_url"    : "",
+        "git_url"   : "",
+        "tw_url"    : ""
+    },
+    ...
+]
+
+
+
+#### Menampilkan data user dengan ID tertentu
+
+GET: /users/[id]
+reponse:
+{
+    "id"        : "",
+    "name"      : "",
+    "motto"     : "",
+    "ig_url"    : "",
+    "fb_url"    : "",
+    "git_url"   : "",
+    "tw_url"    : ""
+}
+
+
+
+#### Menambahkan data user dengan menggunakan ID tertentu
+##### Tidak perlu menggunakan ID dikarenakan PK sudah Auto Increment
+
+POST: /user
+data:
+{
+    "id"        : "",
+    "name"      : "",
+    "motto"     : "",
+    "ig_url"    : "",
+    "fb_url"    : "",
+    "git_url"   : "",
+    "tw_url"    : ""
+}
+
+response:
+true    // if success
+false   // if failure
+
+
+#### Edit data user dengan memasukkan ID tertentu
+
+PUT: /user/[ID]
+data:
+{
+    "name"      : "",
+    "motto"     : "",
+    "ig_url"    : "",
+    "fb_url"    : "",
+    "git_url"   : "",
+    "tw_url"    : ""
+}
+
+response:
+true    // if success
+false   // if failure
+
+
+
+#### Menghapus data user dengan memasukkan ID tertentu
+
+DELETE: /user/[id]
+response:
+true    // if success
+false   // if failure
+
+
+
+
+
+
+### Portofolio
+#### Menampilkan data untuk semua portofolio
+
+
+GET: /portos
+response:
+[
+    {
+        "id"            : "",
+        "title"	        : "",
+        "description"   : "",
+        "thumbnail_url" : "",
+        "technologies"  : "",
+        "url"           : ""
+    }
+
+]
+
+
+
+#### Menampilkan data portofilio dengan id  tertentu
+
+GET: /portos/[id]
+response:
+{
+    "id"            : "",
+    "title"	        : "",
+    "description"   : "",
+    "thumbnail_url" : "",
+    "technologies"  : "",
+    "url"           : ""
+}
+
+
+
+#### Menambahkan data portofolio
+##### Tidak perlu menggunakan ID dikarenakan PK sudah Auto Increment
+
+POST: /porto
+data:
+{
+    "title"	        : "",
+    "description"   : "",
+    "thumbnail_url" : "",
+    "technologies"  : "",
+    "url"           : ""
+}
+
+response:
+true    // if success
+false   // if failure
+
+
+
+#### Memperbarui portofolio dengan menggunakan ID tertentu
+
+PUT: /porto/[ID]
+data:
+{
+    "title"	        : "",
+    "description"   : "",
+    "thumbnail_url" : "",
+    "technologies"  : "",
+    "url"           : ""
+}
+
+response:
+true    // if success
+false   // if failure
+
+
+
+#### Menghapus portofolio dengan menggunakan id tertentu
+
+DELETE: /porto/[id]
+response:
+true    // if success
+false   // if failure
+
+
+
+
+
+
+## Desain Database
+
+Desain database saya untuk menyediakan API Points adalah sebagai berikut:
+
+mermaid
+classDiagram
+    class Article{
+        # id: int,
+        + title: string
+        + description: string
+        + thumbnail: string
+        + author: string
+        + content: string
+        + getAllArticle()
+        + getArticleById()
+        + createArticle()
+        + deleteArticle()
+        + updateArticle()
+    }
+    class Portofolio{
+        # id: int;
+        + title: string
+        + description: string
+        + thumbnail_url: string
+        + technologies: string 
+        + url: string
+        + getAllPorto()
+        + getPortoById()
+        + updatePorto()
+        + createPorto()
+        + deletePorto()
+    }
+    class Users{
+        # id: int
+        + name: string
+        + motto: string
+        + ig_url: string
+        + fb_url: string
+        + git_url: string
+        + tw_url: string
+        + getAllUsers()
+        + getUserById()
+        + updateUser()
+        + createUser()
+        + deleteUser()
+    }
+
