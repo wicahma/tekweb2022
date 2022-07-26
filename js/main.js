@@ -169,7 +169,7 @@ Vue.createApp({
       {
         axios
           .get(
-            fireApi+"article"
+            fireApi+"portos"
             )
           .then((res) => {
             console.log(res.data); //melihat respon data pada console browser
@@ -183,7 +183,7 @@ Vue.createApp({
       {
         axios
           .get(
-            fireApi+"article"
+            fireApi+"users"
             )
           .then((res) => {
             console.log(res.data); //melihat respon data pada console browser
