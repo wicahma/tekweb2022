@@ -1,3 +1,5 @@
+const fireApi= "https://fireapi.diama.my.id/index.php/";
+
 Vue.createApp({
     data() {
       return {
@@ -142,6 +144,8 @@ Vue.createApp({
         },
         // Akhir page index
         data_artikel: [],
+        data_portofolio: [],
+        data_user: [],
         article: null,
 
       };
@@ -151,11 +155,39 @@ Vue.createApp({
       {
         axios
           .get(
-            "https://fireapi.diama.my.id/index.php/articles"
+            fireApi+"article"
             )
           .then((res) => {
             console.log(res.data); //melihat respon data pada console browser
             this.data_artikel = res.data; //memperbarui variabel article pada bagian data()
+          })
+          .catch((error) => {
+            console.log(error); //melihat error jika pengambilan data adalah gagal
+          });
+      },
+      ambilPorto()
+      {
+        axios
+          .get(
+            fireApi+"article"
+            )
+          .then((res) => {
+            console.log(res.data); //melihat respon data pada console browser
+            this.data_portofolio = res.data; //memperbarui variabel article pada bagian data()
+          })
+          .catch((error) => {
+            console.log(error); //melihat error jika pengambilan data adalah gagal
+          });
+      },
+      ambilUser()
+      {
+        axios
+          .get(
+            fireApi+"article"
+            )
+          .then((res) => {
+            console.log(res.data); //melihat respon data pada console browser
+            this.data_user = res.data; //memperbarui variabel article pada bagian data()
           })
           .catch((error) => {
             console.log(error); //melihat error jika pengambilan data adalah gagal
@@ -170,7 +202,7 @@ Vue.createApp({
         console.log(artikel);
         axios
           .get(
-            src="https://raw.githubusercontent.com/wicahma/tekweb2022/master/contents/"+artikel
+            src="https://diama.my.id/contents/"+artikel
           )
           .then((res) => {
             var html = converter.makeHtml(res.data);           
@@ -184,6 +216,8 @@ Vue.createApp({
     },
     beforeMount() { 
       this.ambilArticle(),
+      this.ambilUser(),
+      this.ambilPorto(),
       this.ambilDataMarkdown()
     },
   }).mount("#app");

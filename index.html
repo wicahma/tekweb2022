@@ -89,17 +89,20 @@
   <div style="margin-top: 80px; " class="container-fluid">
     <div style="padding: 10px 1% 25px; margin: 0 1%;" class="row h-100 align-items-top">
       <div class="col-sm-7 text-white">
-        <h1 class="nama">{{header.nama}}</h1>
+        <h1 class="nama">{{data_user.name}}</h1>
         <p class="jobdesk">{{header.des.a}}
           <span><a target="_blank" v-bind:href="header.des.jrs.url">{{header.des.jrs.title}}</a></span> {{header.des.b}}
           <span><a target="_blank" v-bind:href="header.des.kta.url">{{header.des.kta.title}} </a></span>.
         </p>
+        <p class="jobdesk">
+          <b>{{data_user.motto}}</b>          
+        </p>
         <div class="social-cover">
           <div class="social">
-            <a v-bind:href="sosial.ig.url"><i class="bi-instagram"></i></a>
-            <a v-bind:href="sosial.git.url"><i class="bi-github"></i></a>
-            <a v-bind:href="sosial.fb.url"><i class="bi-facebook"></i></a>
-            <a v-bind:href="sosial.tw.url"><i class="bi-twitter"></i></a>
+            <a v-bind:href="data_user.ig_url"><i class="bi-instagram"></i></a>
+            <a v-bind:href="data_user.git_url"><i class="bi-github"></i></a>
+            <a v-bind:href="data_user.fb_url"><i class="bi-facebook"></i></a>
+            <a v-bind:href="data_user.tw_url"><i class="bi-twitter"></i></a>
           </div>
         </div>
       </div>
